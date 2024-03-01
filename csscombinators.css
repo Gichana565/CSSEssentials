@@ -1,0 +1,64 @@
+li{
+    color:black;
+}
+
+/*
+Descendant Combinators Selects every list item element that is within the combinator list
+*/
+
+/* In this case, all elements that are under the list with the id combinatorList are styled red */
+#combinatorList li{
+    color: red;
+}
+
+.box p {
+    color:purple;
+}
+
+/*
+Child combinators selects elements that are a direct child to a parent element
+*/
+/* The elements that are styled in this case, will be li, which are those that are direct children under the list with classname of tsummary */
+.tsummary > li {
+    color: deepskyblue;
+}
+
+#MDN > li{
+    border-top: 5px solid cyan;
+}
+
+/*
+The General Sibling Combinator selects every child element that is after a specified element
+*/
+/*
+In this case, CSS styles every element that is after li element with id of coffee
+*/
+#coffee ~ li {
+    color: magenta;
+}
+
+#subsequentSibling ~ p {
+    font-weight: bold;
+    background-color: green;
+    color: black;
+    padding: .5em;
+}
+
+/*
+The adjacent sibling combinator selects the first sibling after a specified element of choice
+*/
+
+/*
+IN this case, CSS will style li element that is the first child after coffee
+*/
+#coffee + li{
+    color:slategrey;
+}
+
+#nextSibling + p{
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+

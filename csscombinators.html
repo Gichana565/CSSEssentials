@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <!--External Styling-->
+    <link rel="stylesheet" type="text/css" href="csscombinators.css">
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <ul class="tsummary">
+        <li>Defines the relationship between two selectors</li>
+        <li id="combinatorList">
+            There are 4 total
+            <ul>
+                <li>Descendant Combinator</li>
+                <li id="coffee">Child Combinator</li>
+                <li>General Sibling Combinator</li>
+                <li>Adjacent Sibling Combinator</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Descendant Combinators-->
+    <div class="box">
+        <p>Text in .box</p>
+    </div>
+    <p>Text not in .box</p>
+
+    <!--Child Combinator-->
+    <ul id="MDN">
+        <li>Unordered Item</li>
+        <li> Unordered Item
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+        </li>
+    </ul>
+
+    <!--Subsequent Sibling Combinator-->
+    <article>
+        <h1 id="subsequentSibling">A heading</h1>
+        <p>I am a paragraph</p>
+        <div>I am a div</div>
+        <p>I am another paragraph</p>
+    </article>
+
+    <!--Next Sibling Combinator-->
+    <article>
+        <h1 id="nextSibling">A Very Big Heading</h1>
+        <p>
+            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+            melon azuki bean garlic.
+        </p>
+
+        <p>
+            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+        </p>
+    </article>
+    
+</body>
+</html>

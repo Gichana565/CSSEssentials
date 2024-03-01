@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Texts</title>
+    <!--External Styling-->
+    <link rel="stylesheet" type="text/css" href="csstexts.css">
+</head>
+<body>
+    <!--Text Coloring-->
+    <h1>This is heading 1</h1>
+    <p>This is an ordinary paragraph. Notice that this text is blue. 
+        The default text color for a page is defined in the body selector.
+    </p>
+
+    <p>Another paragraph.</p>
+
+    <!--Text Alignment-->
+    <h1 id="center">Heading 1 (center)</h1>
+    <h2 id="left">Heading 2 (left)</h2>
+    <h3 id="right">Heading 3 (right)</h3>
+
+    <p>The three headings above are aligned center, left and right</p>
+    <br>
+    <h1>Example text-align: justify</h1>
+    <p>The text-align: justify;  value stretches the lines so that each line has 
+        equal width (like in newspapers and magazines)
+    </p>
+
+    <div>
+        In my younger and more vulnerable years, my father gave me some advice that I have
+        been turning over in my mind ever since. "Whenerver you feel like criticizing anyone,
+        just remember that all the people in this world haven't had the advantages that you have had."
+    </div>
+
+    <h1>The text-align-last property</h1>
+    <h2>text-align-last: right</h2>
+    <p class="a">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nostrum accusamus atque vel vero doloribus facilis quos quo dignissimos! Accusamus laborum sint suscipit quidem enim eligendi error facere ipsa vero.
+    </p>
+
+    <h2>text-align-last: center</h2>
+    <p class="b">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident architecto itaque nam similique ipsum aliquam hic, soluta ipsa harum maxime deleniti tempore ea facilis corrupti sit, aut, est adipisci. Aliquid.
+    </p>
+
+    <h2>text-align-last: justify</h2>
+    <p class="c">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis dolor aspernatur non esse quis quisquam. Porro culpa animi sapiente, alias maxime quas id laudantium impedit minima cumque doloremque eligendi!
+    </p>
+
+    <!--Text Direction-->
+    <p>This is the default text direction</p>
+    <p class="ex1">This is right-to-left text direction.</p>
+
+    <!--Vertical alignment-->
+    <h1>Vertical Align Property</h1>
+
+    <h2>vertical-align: baseline (default): </h2>
+    <p>An <img class="a" src="future.jpg" width="9" height="9"> image with a default alignment.</p>
+
+    <h2>vertical-align: text-top: </h2>
+    <p>An <img class="b" src="future.jpg" width="9" height="9"> image with a text-top alignment.</p>
+
+    <h2>vertical-align: text-bottom: </h2>
+    <p>An <img class="c" src="future.jpg" width="9" height="9"> image with a text-bottom alignment.</p>
+
+    <h2>vertical-align: sub: </h2>
+    <p>An <img class="d" src="future.jpg" width="9" height="9"> image with a sub alignment.</p>
+
+    <h2>vertical-align: sup: </h2>
+    <p>An <img class="e" src="future.jpg" width="9" height="9"> image with a sup alignment.</p>
+
+    <!--Text Decoration-->
+    <!--Text-decoration-line adds a decoration line to text-->
+    <h1 id="overline">Overline Text decoration</h1>
+    <h2 id="linethrough">Line-through text decoration</h2>
+    <h3 id="underline">Underline text decoration</h3>
+    <p class="ex">Overline and underline text decoration.</p>
+
+    <p><strong>Note:</strong>It is not recommended to undrline text that is not a link, since this will often confuse the reader.</p>
+
+    <!--text-decoration-style-->
+    <h1 id="solid">Heading 1</h1>
+    <h2 id="double">Heading 2</h2>
+    <h3 id="dotted">Heading 3</h3>
+    <p id="dashed">A Paragraph</p>
+    <p id="wavy">Another paragraph.</p>
+    <p id="redwavy">Another paragraph</p>
+
+    <!--Shorthand property combining line, color, style, thickness-->
+    <h1 id="decor1">Heading 1</h1>
+    <h2 id="decor2">Heading 2</h2>
+    <h3 id="decor3">Heading 3</h3>
+    <p id="decor4">A paragraph.</p>
+
+    <!--Removing underline from links that are usually set by default-->
+    <h1>Using text-decoration: none</h1>
+    <p>A link with no underline:
+        <a href="https://www.w3schools.com">W3schools.com</a>
+    </p>
+
+    <!--Text transform property-->
+    <!--Can do uppercase, lowercase or capitalize each word-->
+    <p class="uppercase">This text has been transformed to uppercase</p>
+    <p class="lowercase">This text is transformed to lowercase.</p>
+    <p class="capitalize">This text is capitalized.</p>
+
+    <!--Text Spacing-->
+    <!--1. Text Indentation using text-indent property to specify the indentation of the first line of a text-->
+    <h1>Using text-indent</h1>
+
+    <p id="textIndent">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+    <!--2.Letter spacing-->
+    <h1>Using letter-spacing</h1>
+    <h2 class="spacing">This is heading 1</h2>
+    <h3 class="spacing">This is heading 2</h3>
+
+    <!--3.Line Height-->
+    <h1>Using Line Height</h1>
+    <p class="lineHeight">
+        This is a paragraph with a smaller line height. <br>
+        The default line height in most browsers is about 110% to 120%.<br>
+    </p>
+
+    <p class="small">
+        This is a paragraph with a smaller line-height.<br>
+        This is a paragraph with a smaller line height. <br>
+    </p>
+
+    <p class="big">
+        This is a paragraph with a bigger line-height.<br>
+        This is a paragraph with a bigger line height. <br>
+    </p>
+
+    <!--4. Word Spacing-->
+    <h1>Using word-spacing</h1>
+    <p>This is a paragraph with normal word spacing.</p>
+    <p class="one">This is a paragraph with a larger word spacing</p>
+    <p class="two">This is a paragraph with a smaller word spacing.</p>
+
+    <!--5.White space-->
+    <h1>Using white space</h1>
+    <p id="whitespace">
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+    </p>
+
+    <p>Try to remove the white-space property to see the difference</p>
+
+    <!--Text Shadow-->
+    <h1 id="simple">Text Shadow effect</h1>
+    <h1 id="red">Text Shadow Effect!</h1>
+    <h1 id="blur">Text shadow effect.</h1>
+
+    <!--Text shadow on a white text-->
+    <h1 id="white">Text-shadow effect!</h1>
+    <!--Text shadow on a red neon glow-->
+    <h1 id="redneon">Text-shadow effect!</h1>
+    <!--Text shadow with red and blue neon glow-->
+    <h1 id="redblueneon">Text-shadow effect</h1>
+    <!--Text shadow on a black, blue and dark blue glow on a white text-->
+    <h1 id="blackblue">Text Shadow Effect.</h1>   
+
+</body>
+</html>

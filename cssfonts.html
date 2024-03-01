@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Fonts</title>
+        <link rel="stylesheet" type="text/css" href="cssfonts.css">
+    </head>
+
+    <body>
+        <!--font-family-->
+        <h1>CSS font-family</h1>
+        <p class="p1">This is a paragraph, shown in the Times New Roman.</p>
+        <p class="p2">This is a paragraph, shown in the arial font.</p>
+        <p class="p3">This is a paragraph, shown in the Lucida Console Font.</p>
+
+        <!--Fallback fonts-->
+        <div id="arial">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="verdana">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="tahoma">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="trebuchet">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="roman">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="georgia">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="garamond">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="courier">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+
+        <div id="brushscript">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <br>
+        
+        <!--Font style property-->
+        <div id="style">
+            <p class="normal">This is a paragraph in normal style.</p>
+            <p class="italic">This is a paragraph in italic style.</p>
+            <p class="oblique">This is a paragraph in oblique style.</p>
+        </div>
+
+        <!--Font weight property-->
+        <div id="weight">
+            <h1>The font weight property</h1>
+            <p id="normal">This is a paragraph.</p>
+            <p id="light">This is a paragraph.</p>
+            <p id="thick">This is a paragraph.</p>
+            <p id="thicker">This is a paragraph.</p>
+        </div>
+
+        <!--font variant property-->
+        <h2>Font-variant property</h2>
+        <p id="variantnormal">My name is Hege Refsnes.</p>
+        <p id="variantsmall">My name is Hege Refsnes.</p>
+
+        <!--Font Size-->
+        <!--1. font size using pixels-->
+        <h1>font size using pixels</h1>
+        <div id="pixels">
+            <h1 id="pixel1">This is heading 1</h1>
+            <h2 id="pixel2">This is heading 2</h2>
+            <p id="pixel3">This is a paragraph.</p>
+            <p id="pixel4">This is another paragraph.</p>
+        </div>
+
+        <!--2. font size using em-->
+        <div id="em">
+            <h1 id="em1">This is heading 1</h1>
+            <h2 id="em2">This is heading 2</h2>
+            <p class="em3">This is a paragraph.</p>
+            <p class="em3">Specifying the font-size in em allows all major browsers to resize the text.
+               Unfortunately, there is still a problem with older versions of IE.
+               When resizing the text, it becomes larger/smaller than it should.
+            </p>
+        </div>
+
+        <!--3.font size using viewport-->
+        <div id="viewport">
+            <h1 id="viewport1">Responsive text.</h1>
+            <p class="viewport2">Resize the browser window to see how the text scales.</p>
+            <p class="viewport2">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+            <p>Viewport is the browser window size. 1vw = 1% of the viewport width. If the viewport is 50cm wide, 1vw is 0.5cm</p>
+        </div>
+
+        <!--4. font size using more than one property in one line-->
+        <div id="shorthand">
+            <h1>The font shorthand property</h1>
+            <p class="a">
+                This is a paragraph. The font size is set to 20 pixels,
+                and the font family is Arial.
+            </p>
+
+            <p class="b">
+                This is a paragraph. The font is set to italic, small-caps and 
+                bold, the font size is set to 12 pixels, the line height is set 
+                to 30 pixels, and the font-family is Georgia. 
+            </p>
+        </div>
+    </body>
+</html>

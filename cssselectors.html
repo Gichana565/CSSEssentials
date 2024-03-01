@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+        <link rel="stylesheet" type="text/css" href="cssselectors.css">
+    </head>
+
+    <body>
+        <h1>Welcome to my blog</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores, dicta ut, officiis nulla maiores facere ipsam alias esse atque nostrum magni facilis est inventore. Aperiam, iure. Magni, repellat consequuntur.</p>
+        <h1>I am a super web developer</h1>
+
+        <!--Demonstrating the use of class attribute for use in CSS-->
+        <h1 class="title">Welcome to my class blog</h1>
+        <p class="title">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem, in, voluptates perferendis fuga est eligendi tempora nobis asperiores necessitatibus molestias provident accusantium cumque eius amet ea corrupti qui sequi?
+        </p>
+        <h1>I am currently learning CSS and HTML</h1>
+
+        <!--Using id attribute to target unique selectors for CSS and can only be applied to the content of one element-->
+        <h1 id="blue-bordered">Now we are using an Id Selector</h1>
+
+        <!--Demonstrating the use of multiple selector types-->
+        <!--Using lists for a number of items to demonstrate use of classes-->
+        <p>We offer the following drinks:</p>
+        <ul>
+            <li class="FirstItem">Coffee</li>
+            <li>Tea</li>
+            <li class="LastItem">Juice</li>
+        </ul>
+
+        <p>The following are the fleet types operated by the airline:</p>
+        <ul>
+            <li class="FirstItem">Airbus A350-1000</li>
+            <li>Airbus A330-900</li>
+            <li>Airbus A350-900</li>
+            <li>Boeing 787-9</li>
+            <li>Boeing 787-8</li>
+            <li class="LastItem">Boeing 777-300ER</li>
+        </ul>
+
+        <h3>Sports </h3>
+        <p class="red">Football notably is the best and most followed sport in the World as many countries have encorporated leagues that are played by specific teams.
+           Very notable ones are the English Premier League of England and La Liga of Spain.
+        </p>
+
+        <p id="redElement">
+            Rugby and American football are usually confused by many but they both have different principles.
+        </p>
+
+        <p class="red">
+            The best players of all time in football currently are: 
+            <ul>
+                <li id="redElement">Kylian Mbappe</li>
+                <li>Haaland</li>
+                <li>Lionel Messi</li>
+                <li>Kevin De Bruyne</li>
+            </ul>
+        </p>
+
+        <!--Demonstrating the use of classes limiting to one type of element-->
+        <h1 class="textcolor">Heading </h1>
+        <h2 class="textcolor">Wrong implementation !! </h2>
+        <p class="textcolor1">Paragraph in class textcolor1</p>
+        <p class="textcolor2">Paragraph in class textcolor2</p>
+        <h1 class="textcolor2">Heading </h1>
+
+        <!--Descendant Combinator combines two elements, which are matched by the second
+            selector, are selected if they have an ancestor element matching the first selector
+            Selectors that utilize a descendant combinator are called descendant selectors   
+        -->
+
+        <div class="box">
+            <p>Text in .box</p>
+        </div>
+
+        <p>Text not in box</p>
+
+
+    </body>
+</html>

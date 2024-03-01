@@ -1,0 +1,80 @@
+/*
+ - Type Selectors are used when one wants to apply the same rule on every element in the page
+*/
+
+/*
+-e.g Changing h1 to be red, font to be roboto and the text-align to be at the center
+*/
+
+h1{
+    color: red;
+    font-family: roboto;
+    text-align: center;
+}
+
+/*
+- Class Selectors are useful when you want to apply style in multiple elements.
+- Class is a tag attribute that allows us to name an identifier for the element to adopt a certain style.
+- Specified with a period(.)
+*/
+.title{
+    color: blue;
+}
+
+/*
+- Id selectors are used when one wants to target unique elements by their ID values.
+- Can only applied to the content of ONE element.
+- Referenced using a #
+*/
+#blue-bordered {
+    border: 5px dashed blue;
+}
+
+/*
+- Multiple selectors are used to emphasize on DRY principle in programming, which is Don't Repeat Yourself principle
+*/
+
+/* Selecting multiple HTML types */
+h1, p{
+    border: 1px solid black;
+}
+
+/*Selecting styles to be applied to several classes */
+.FirstItem, .LastItem {
+    font-size: 1.2em;
+}
+
+/* Using multiple kinds of selectors */
+h3, .red, #redElement {
+    color:red;
+}
+
+/*
+- Limiting the scope to only one type of element using classes
+- Syntax: element.nameOfClass {...}
+ */
+h1.textcolor{
+    color:#FF0066;
+}
+.textcolor1{
+    color: #00FF00;
+}
+.textcolor2{
+    color: #0000FF
+}
+
+/*
+Descendant Combinator combines two elements, which are matched by the second
+            selector, are selected if they have an ancestor element matching the first selector
+            Selectors that utilize a descendant combinator are called descendant selectors
+*/
+/*
+- The descendant selector below is p since it is matched to the first selector, box
+*/
+.box p{
+    color: red;
+}
+
+
+
+

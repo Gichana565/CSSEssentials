@@ -1,0 +1,103 @@
+/*
+- margins can be set in a similar way to padding 
+- Syntax:
+margin: margin(top right bottom left)
+e.g: margin: 0 3em 0 3em;
+*/
+.box {
+    margin: 0 3em 0 3em
+}
+
+/*
+Margins in CSS can also be set using fewer values.
+*/
+.box2 {
+    margin: 0 1.5em;/*Similar to 0 1.5em 0 1.5em */
+}
+
+/*
+- Margins can be set using one value to represent the four values
+*/
+.box3 {
+    margin: 100px;
+}
+
+/*
+- Margins can equally be set using individual values
+*/
+.box4{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/*
+- auto keyword is used in CSS to ask the browser to define the margin for you
+- auto value is equivalent to 0 or whatever space is available for the side of the element
+*/
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+
+h2{
+    margin: 0 0 20px 0;
+}
+
+p{
+    margin: 10px 0 0 0;
+}
+
+/*
+- Negative margins pull elements in a particular direction or pull other elements towards it
+*/
+/*
+- An example of a container with padding, and the header h2 has negative margins pulling itself through that padding back to the edges
+*/
+.module {
+    padding: 1rem;
+    background: white;
+}
+
+.module h2 {
+    background: #90a4ae;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 1rem;
+}
+
+.module :last-child {
+    margin-bottom: 0;
+}
+
+.module {
+    background: #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*
+- An example of the first paragraph having a negative bottom margin which pulls the next paragraph up against
+*/
+#negativeMargin2{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#negativeMargin2 p {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+#negativeMargin2 p:first-child {
+    margin-bottom: -1rem;
+}
+
+#dimension{
+   height: 150px;
+   width: 90%;
+}

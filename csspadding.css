@@ -1,0 +1,29 @@
+/*
+Padding represents the innermost part of the box model
+Syntax:
+-> padding: padding(top-left-bottom-right)
+*/
+
+.box{
+    margin: 0 auto;
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+/*
+- Specifying width into an element will consider adding left and right padding values
+*/
+
+/*
+- In order to retain the width no matter the amount of padding, use the box-sizing property
+*/
+
+.box2{
+    margin: 0 auto;
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}

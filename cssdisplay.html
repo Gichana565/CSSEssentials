@@ -1,0 +1,90 @@
+<!--Integrating CSS Display in HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <!--External Styling-->
+    <link rel="stylesheet" type="text/css" href="cssdisplay.css" />
+</head>
+<body>
+    <div id="inlinedisplay">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           <span id="inline">This is an inline element.</span>Quaerat asperiores sint, similique ea cupiditate animi incidunt recusandae temporibus omnis id quas error consectetur reiciendis cumque atque molestias eius fugiat inventore.
+        </p>
+    </div>
+     <br><br>
+
+    <div id="blockdisplay">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           <span id="block">This is a block element.</span>Quaerat asperiores sint, similique ea cupiditate animi incidunt recusandae temporibus omnis id quas error consectetur reiciendis cumque atque molestias eius fugiat inventore.
+        </p>
+    </div>
+
+    <div id="inlineblockdisplay">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Incidunt aliquid optio est commodi. 
+        <span id="inlineblock">This is an inline-block element</span>
+        Quasi, nihil similique beatae, explicabo odit quisquam tempora tenetur eum perspiciatis harum, unde culpa magni delectus vero.
+        </p>
+    </div>
+
+    <div id="nonedisplay">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Incidunt aliquid optio est commodi. 
+        <span id="none">This is an inline-block element</span>
+        Quasi, nihil similique beatae, explicabo odit quisquam tempora tenetur eum perspiciatis harum, unde culpa magni delectus vero.
+    </div>
+
+    <div id="hiddenvisibility">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Incidunt aliquid optio est commodi. 
+        <span id="hidden">This is an inline-block element</span>
+        Quasi, nihil similique beatae, explicabo odit quisquam tempora tenetur eum perspiciatis harum, unde culpa magni delectus vero.
+        </p>
+    </div>
+
+    <!--Drawing HTML tables using CSS-->
+    <div class="table">
+        <div class="row">
+            <div class="cell">Fruits</div>
+            <div class="cell">Lemurs</div>
+            <div class="cell">Pets</div>
+        </div>
+        <div class="row">
+            <div class="cell">Cashew</div>
+            <div class="cell">Huahua</div>
+            <div class="cell">Dog</div>
+        </div>
+        <div class="row">
+            <div class="cell">Apple</div>
+            <div class="cell">Diadem Sifaka</div>
+            <div class="cell">Cat</div>
+        </div>
+        <div class="row">
+            <div class="cell">Mango</div>
+            <div class="cell">Ring-tailed</div>
+            <div class="cell">Chicken</div>
+        </div>
+    </div>
+
+    <!--Using display:inherit to make an element inherit the display property of its parent-->
+    <div id="inheritdisplay">
+        <p>Lorem, ipsum dolor sit amet consectetur
+        <span id="inherit">Inline element</span> adipisicing elit.
+        Earum expedita cum accusamus magni culpa, eveniet temporibus modi itaque, quo vel fugiat, magnam veniam nisi aperiam impedit!
+        Ratione iure optio reprehenderit?
+        </p>
+    </div>
+    
+    <div id="initialdisplay">
+        <p>
+        Lorem, ipsum dolor sit amet consectetur
+        <span id="initial">Inline element</span> adipisicing elit.
+        Earum expedita cum accusamus magni culpa, eveniet temporibus modi itaque, quo vel fugiat, magnam veniam nisi aperiam impedit!
+        Ratione iure optio reprehenderit?
+        </p>
+    </div>
+</body>
+</html>

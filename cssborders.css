@@ -1,0 +1,97 @@
+/*
+- border sets the border of an element.
+Syntax:
+border: <border-width> <border-style> <color>
+*/
+
+/*
+- Border width can take the values of thin, medium and thick
+- length values can have units of px, em, rem, vh and vw units
+- Border color can accept rgb(), rgba(), hsl(), hsla(), hex-color, named-color
+*/
+
+/* Border styles*/
+
+/* 1. None: Doesn't draw a line */
+.box-1 {
+    border: none;
+}
+
+/*2. Hidden: Draws a line that is not visible 
+- Useful for adding extra width without displaying a border
+
+*/
+.box-2{
+    border: 5px hidden red;
+}
+
+/* 3. Solid: Draws a solid, continuous line */
+.box-3 {
+    border: 5px solid orange;
+}
+
+/* 4. Dashed: Draws a dashed line */
+.box-4 {
+    border: 5px dashed orange;
+}
+
+/* 5. Dotted: Draws a dotted line */
+.box-5 {
+    border: 5px dotted orange;
+}
+
+/*6. Double: draws two lines around the element */
+.box-6 {
+    border: 5px double orange;
+}
+
+/* 7. groove: Adds a bevel based on the color value such that the element appears
+              pressed in the document
+*/
+.box-7{
+    border: 5px groove orange;
+}
+
+/* 8. ridge: adds a bevel based on the color value, but reverses the color in a way that 
+             makes the element appear raised
+*/ 
+.box-8{
+    border: 5px ridge orange;
+}
+
+/* 9. inset: Adds a split tone to the line that makes the element appear slightly depressed */
+.box-9{
+    border: 5px inset orange;
+}
+
+/* 10. outset: adds a split tone to the line, but reverses its colors in a way that makes the element
+               appear slightly raised
+*/
+.box-10{
+    border: 5px outset orange;
+}
+
+/* 11. initial: Sets the border-style property to its default value */
+
+/* 12. inherit: Inherits the border-style property from its parent element */
+
+/* 13. mixed: combines more than one border style */
+.box-11 {
+    border-width: 5px;
+    border-style: none dashed solid dotted;
+    border-color: green;
+}
+
+/* Demonstrating the use of rounded corners through border radius */
+p{
+    border: 10px solid blue;
+    margin: 20px;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.elliptical{
+    border-radius: 50px / 25px;
+}

@@ -1,0 +1,70 @@
+/* 
+first-child pseudo class selector targets the first child element in the article
+*/
+article p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/*
+- User action pseudo classes apply when the user interacts with the document
+- They act as if a class had been added to the element when the user interacts with it.
+*/
+a:link, a:visited{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+/*
+- Pseudo-elements also select elements that are in a specific state, but work as if one added a new HTML element into the markup
+- Start with double colon (::)
+*/
+#pseudoelements p::first-line{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/*
+Combining pseudo-classes and pseudo elements
+*/
+/*
+In the example below, this is done to make the first line of the paragraph bold
+*/
+#pseudoelements2 p:first-child::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* Using before and after in content using CSS */
+.box::before {
+    content: "This should show before the other content. ";
+}
+
+.box2::after {
+    content: "This should show after the other content. ";
+}
+
+/*
+- Demonstrating the use of before and after using display block  to have it styled having a width and height
+*/
+.box3::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}
+
+.box4::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 1px solid black;
+}

@@ -1,0 +1,264 @@
+/* CSS Text Styling */
+body {
+    /* Coloring the body text */
+    color: blue;
+}
+
+h1 {
+    /* Coloring the heading text */
+    color: green;
+}
+
+/* Text Alignment */
+/* - Texts can be left/ right aligned, centered, justified */
+#center {
+    text-align: center;
+}
+
+#left {
+    text-align: left;
+}
+
+#right{
+    text-align: right;
+}
+
+/* Justify stretches each line such that it has equal width, and the left and right margins are straight */
+div{
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+
+/* Text align last property specifies how to align the last line of text */
+.a{
+    text-align-last: right;
+}
+
+.b{
+    text-align-last: center;
+}
+
+.c{
+    text-align-last: justify;
+}
+
+.d{
+    text-align-last: justify;
+}
+
+/* Text direction using direction and unicode-bidi properties */
+.ex1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+/* Vertical alignment */
+.a {
+    vertical-align: baseline;
+}
+
+.b {
+    vertical-align: text-top;
+}
+
+.c {
+    vertical-align: text-bottom;
+}
+
+.d {
+    vertical-align: sub;
+}
+.e {
+    vertical-align: super;
+}
+
+/* Text decoration */
+/* 1. Using text-decoration line property */
+/* 2. text-decoration-color sets the color of the decoration line */
+/* 3. text-decoration-style property sets the style of the decoration line */
+#overline {
+    text-decoration: overline;
+    text-decoration-color: red;
+}
+
+#linethrough{
+    text-decoration: line-through;
+    text-decoration-color: blue;
+}
+
+#underline{
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+p.ex{
+    /* Combines both overline and underline in the same element */
+    text-decoration: overline underline;
+    text-decoration-color: purple;
+}
+/* Text decoration style */
+/* text-decoration-thickness sets the thckness of the decoration line */
+
+#solid {
+   text-decoration-line: underline;
+   text-decoration-style: solid;
+   text-decoration-thickness: auto;
+}
+#double {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+}
+#dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 25%;
+}
+
+#dashed {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+#wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+#redwavy{
+    text-decoration-line: underline;
+    text-decoration-color:red;
+    text-decoration-style: wavy;
+}
+
+/* Shorthand property
+ - combines line, color, style and thickness or any of the attributes
+*/
+#decor1 {
+    text-decoration: underline;
+}
+
+#decor2 {
+    text-decoration: underline red;
+}
+
+#decor3 {
+    text-decoration: underline red double;
+}
+
+#decor4 {
+    text-decoration: underline red double 5px;
+}
+
+/* 
+Removing the underline mark from links using text-decoration:none */
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+/* using text-transform property to change texts into uppercase, lowercase and Capitalized formats
+*/
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* 
+- Text indent using text-indent property to specify the indentation of the first line of a text
+*/
+#textIndent {
+    text-indent: 50px;
+}
+
+/*
+- letter-spacing specifies the space between characters in a text
+*/
+h2.spacing{
+  letter-spacing: 5px;
+}
+h3.spacing {
+    letter-spacing: -2px;
+}
+
+/*
+- line height spcifies the space between lines
+*/
+.small{
+    line-height: 0.7;
+}
+
+.big {
+    line-height: 1.8;
+}
+
+/*
+- word spacing specifies the space between words in a text
+*/
+.one{
+    word-spacing: 10px;
+}
+.two{
+    word-spacing: -2px;
+}
+
+/* white-space specifies how white space inside an element is handled */
+/* -example shows how to disable text wrapping inside an element */
+#whitespace {
+    white-space: nowrap;
+}
+
+/*
+- text-shadow adds shadow to text
+*/
+#simple{
+    text-shadow: 2px 2px;
+}
+/*
+- text shadow with a red color with it
+*/
+#red{
+    text-shadow: 2px 2px red;
+}
+/*
+- text shadow with a blur effect on text
+*/
+#blur {
+    text-shadow: 2px 2px 5px red;
+}
+/*
+- Text shadow on a white text
+*/
+#white{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+/*
+- Text shadow on a red neon glow
+*/
+#redneon{
+    text-shadow: 0 0 3px #ff0000;
+}
+/*
+- Text shadow with red and blue neon glow
+*/
+#redblueneon{
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+/*
+- Text shadow on a black, blue and dark blue glow on a white text
+*/
+#blackblue{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+

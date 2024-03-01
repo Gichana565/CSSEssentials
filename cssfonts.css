@@ -1,0 +1,200 @@
+/* font-family specifies the font of a text, which is selected depending on a user's preference
+- Use fallback fonts in case a font of choice is not found as shown below */
+*/
+.p1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* Using font-family: Arial.
+*/
+#arial {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* 
+Using verdana(sans-serif)
+*/
+#verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+- tahoma, has less space between characters
+*/
+#tahoma{
+    font-family: Tahoma, sans-serif;
+}
+
+/*
+- trebuchet MS, not supported by all mobile OS
+*/
+#trebuchet{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/*
+- using times new roman as a font
+*/
+#roman{
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*
+- Using georgia as a font
+*/
+#georgia{
+    font-family: Georgia, serif;
+}
+
+/*
+- Using garamond as a font
+*/
+#garamond{
+    font-family: Garamond, serif;
+}
+
+/*
+- Using courier new as a font
+*/
+#courier{
+    font-family: 'Courier New', monospace;
+}
+
+/*
+- Brush script mimics handwriting
+*/
+#brushscript{
+    font-family: 'Brush Script MT', cursive;
+}
+
+/*color is used to change the text color depending on a person's preference.
+
+- Can take rbg, colorname, hex values and hsl
+e.g p{
+    color: green;
+}
+*/
+
+/* font-style property defines fonts in form of italics */
+.normal{
+    font-style: normal;
+}
+.italic{
+    font-style: italic;
+}
+.oblique{
+    font-style: oblique;
+}
+
+/* font-weight defines the weight of fonts */
+#normal{
+    font-weight: normal;
+}
+
+#light{
+    font-weight: lighter;
+}
+
+#thick{
+    font-weight: bold;
+}
+
+#thicker{
+    font-weight: 900;
+}
+
+/*font-variant transforms a font into small caps format.
+- all lowercase letters are transformed into uppercase letters
+  but will appear in a smaller font size as compared to the original
+  uppercase letters in a text.
+*/
+#variantnormal{
+    font-variant: normal;
+}
+
+#variantsmall{
+    font-variant: small-caps;
+}
+
+/* font-size values can be listed using:
+ - pixels(px).
+ - em
+ - vw (viewport width).
+ - percent and em
+
+ */
+
+ /*
+ Using pixels (px)
+ */
+ #pixel1{
+    font-size: 40px;
+ }
+
+ #pixel2{
+    font-size: 30px;
+ }
+
+ #pixel3, #pixel4{
+    font-size: 14px;
+ }
+
+ /*
+ - Using em. 1em = 16px
+ */
+ #em1{
+    font-size: 2.5em;
+ }
+
+ #em2{
+    font-size: 1.875em;
+ }
+
+ .em3{
+    font-size: 0.875em;
+ }
+
+ /*
+ Combining % and em:
+ body{
+    font-size: 100%;
+ }
+ */
+
+ /*
+ Using viewport as a unit
+ 1vw = 1% of width
+ */
+ #viewport1 {
+    font-size: 10vw;
+ }
+
+ .viewport2 {
+    font-size: 5vw;
+ }
+
+ /*
+ using font shorthand property in one line
+Syntax:
+ font: style variant weight size/line-height family
+ */
+ .a{
+    font: 20px Arial, sans-serif;
+    color: rgb(0, 0, 255);
+ }
+
+ .b{
+    font: italic small-caps bold 12px/30px Georgia, serif;
+ }
+
+
+
+

@@ -1,0 +1,76 @@
+/* Using display property in CSS */
+/* 1. inline property */
+body{
+    /*
+    display: flex;
+    */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 2rem;
+}
+
+div{
+    max-width: 600px;
+}
+
+#inline{
+    background-color: #006100
+}
+
+#block{
+    display: block;
+    background-color: #007890;
+}
+
+#inlineblock{
+    display: inline-block;
+    background-color: #762900;
+    width: 140px;
+    height: 150px;
+}
+
+#none{
+    display: none;
+    background-color: navy-blue;
+    width: 140px;
+    height: 160px;
+}
+
+#hidden{
+    visibility: hidden;
+    background-color: gray;
+    width: 140px;
+    height: 150px;
+}
+
+/* Using display: table and attributes like table-row and table-cell to draw tables using CSS */
+.table{
+    display: table;
+}
+
+.row{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+}
+
+.row, .cell{
+    padding: 10px;
+} 
+
+/* Using inherit property to inherit the display property of the parent element */
+#inherit{
+    display: inherit;
+    background-color:crimson;
+}
+
+/* Using initial display property sets the value of an element to its default value.
+- display property of span to initial, it remains inline while for a div, it remains to be a block
+*/
+#initial{
+    display: initial;
+    background-color: turquoise;
+}
